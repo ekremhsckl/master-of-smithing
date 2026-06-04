@@ -1,0 +1,70 @@
+import { PetData } from '@/types/game';
+
+export const PETS_DATABASE: PetData[] = [
+  {
+    id: 'fire_imp',
+    name: 'Fire Imp',
+    description: 'A small fiery creature with attack bonuses',
+    rarity: 'common',
+    baseHp: 30,
+    baseAttack: 12,
+    baseDefense: 5,
+    hatchingOdds: 40,
+    skills: [
+      {
+        id: 'fireball',
+        name: 'Fireball',
+        description: 'Deal fire damage',
+        type: 'attack',
+        damageMultiplier: 1.5,
+        manaCost: 20,
+        accuracy: 85,
+        cooldown: 3,
+      },
+    ],
+  },
+  {
+    id: 'ice_wolf',
+    name: 'Ice Wolf',
+    description: 'A cold predator with defense benefits',
+    rarity: 'rare',
+    baseHp: 45,
+    baseAttack: 15,
+    baseDefense: 12,
+    hatchingOdds: 25,
+    skills: [
+      {
+        id: 'ice_shield',
+        name: 'Ice Shield',
+        description: 'Create a protective ice barrier',
+        type: 'defense',
+        damageMultiplier: 0,
+        manaCost: 25,
+        accuracy: 100,
+        cooldown: 4,
+      },
+    ],
+  },
+  {
+    id: 'holy_phoenix',
+    name: 'Holy Phoenix',
+    description: 'A legendary bird with healing powers',
+    rarity: 'legendary',
+    baseHp: 60,
+    baseAttack: 20,
+    baseDefense: 15,
+    hatchingOdds: 5,
+    skills: [
+      {
+        id: 'divine_heal',
+        name: 'Divine Heal',
+        description: 'Restore health',
+        type: 'heal',
+        damageMultiplier: 0,
+        manaCost: 30,
+        accuracy: 100,
+        cooldown: 5,
+      },
+    ],
+  },
+];
